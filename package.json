@@ -2,8 +2,9 @@
   "name": "transfeera_api",
   "version": "1.0.0",
   "description": "Teste para vaga de desenvolvedor.",
-  "main": "app/index.js",
+  "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Eduardo Barbiero",

@@ -7,23 +7,7 @@ const server = Hapi.server({
     host: 'localhost'
 });
 
-server.route({
-    method: 'GET',
-    path: '/',
-    handler: (request, h) => {
-
-        return 'Server running!';
-    }
-});
-
-server.route({
-    method: 'GET',
-    path: '/{name}',
-    handler: (request, h) => {
-
-        return 'Hello, ' + encodeURIComponent(request.params.name) + '!';
-    }
-});
+require('./server/routes')(server);
 
 const init = async () => {
 
