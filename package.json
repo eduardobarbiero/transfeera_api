@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Eduardo Barbiero",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "hapi": "^17.5.1",
     "pg": "^7.4.3",
