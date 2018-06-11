@@ -19,8 +19,9 @@ Cadastros de Estados, Cidades e CEPs
 ### Instalação
 1. Clone o repositório: `git clone https://github.com/eduardobarbiero/transfeera_api.git`;
 2. Instale as dependências: `npm install`;
-3. A configuração dos dados de conexão com o banco de dados e porta do servidor devem ser feitos através de variaveis de ambiente: 
-* PORT;
+3. A configuração dos dados de conexão com o banco de dados e porta do servidor devem ser feitos através de variaveis de ambiente para ser usado em produção: 
+* NODE_ENV - default development;
+* PORT - default 3000;
 * DB_USERNAME;
 * DB_PASSWORD;
 * DB_NAME;
