@@ -12,12 +12,6 @@ module.exports = (server) => {
         path: '/',
         handler: (request, h) => {
             return 'System running';
-        },
-        config: {
-          cors: {
-            origin: ['*'],
-            additionalHeaders: ['cache-control', 'x-requested-with']
-          }
         }
       }, 
       {
@@ -25,12 +19,6 @@ module.exports = (server) => {
         path: '/api',
         handler: (request, h) => {
             return 'Api running';
-        },
-        config: {
-          cors: {
-            origin: ['*'],
-            additionalHeaders: ['cache-control', 'x-requested-with']
-          }
         }
       }, 
     ]
@@ -42,46 +30,22 @@ module.exports = (server) => {
       { 
         method: 'GET',
         path: '/api/states',
-        handler: statesController.index,
-        config: {
-          cors: {
-            origin: ['*'],
-            additionalHeaders: ['cache-control', 'x-requested-with']
-          }
-        }
+        handler: statesController.index
       },
       { 
         method: 'POST',
         path: '/api/states',
-        handler: statesController.create,
-        config: {
-          cors: {
-            origin: ['*'],
-            additionalHeaders: ['cache-control', 'x-requested-with']
-          }
-        }
+        handler: statesController.create
       },
       { 
         method: 'DELETE',
         path: '/api/states/{id}',
-        handler: statesController.destroy,
-        config: {
-          cors: {
-            origin: ['*'],
-            additionalHeaders: ['cache-control', 'x-requested-with']
-          }
-        }
+        handler: statesController.destroy
       },
       { 
         method: 'PUT',
         path: '/api/states/{id}',
-        handler: statesController.update,
-        config: {
-          cors: {
-            origin: ['*'],
-            additionalHeaders: ['cache-control', 'x-requested-with']
-          }
-        }
+        handler: statesController.update
       }
     ]    
   );
@@ -92,46 +56,22 @@ module.exports = (server) => {
       { 
         method: 'GET',
         path: '/api/cities',
-        handler: citiesController.index,
-        config: {
-          cors: {
-            origin: ['*'],
-            additionalHeaders: ['cache-control', 'x-requested-with']
-          }
-        }
+        handler: citiesController.index
       },
       { 
         method: 'POST',
         path: '/api/cities',
-        handler: citiesController.create,
-        config: {
-          cors: {
-            origin: ['*'],
-            additionalHeaders: ['cache-control', 'x-requested-with']
-          }
-        }
+        handler: citiesController.create
       },
       { 
         method: 'DELETE',
         path: '/api/cities/{id}',
-        handler: citiesController.destroy,
-        config: {
-          cors: {
-            origin: ['*'],
-            additionalHeaders: ['cache-control', 'x-requested-with']
-          }
-        }
+        handler: citiesController.destroy
       },
       { 
         method: 'PUT',
         path: '/api/cities/{id}',
-        handler: citiesController.update,
-        config: {
-          cors: {
-            origin: ['*'],
-            additionalHeaders: ['cache-control', 'x-requested-with']
-          }
-        }
+        handler: citiesController.update
       }
     ]
   );
@@ -142,46 +82,22 @@ module.exports = (server) => {
       { 
         method: 'GET',
         path: '/api/ceps',
-        handler: cepsController.index,
-        config: {
-          cors: {
-            origin: ['*'],
-            additionalHeaders: ['cache-control', 'x-requested-with']
-          }
-        }
+        handler: cepsController.index
       },
       { 
         method: 'POST',
         path: '/api/ceps',
-        handler: cepsController.create,
-        config: {
-          cors: {
-            origin: ['*'],
-            additionalHeaders: ['cache-control', 'x-requested-with']
-          }
-        }
+        handler: cepsController.create
       },
       { 
         method: 'DELETE',
         path: '/api/ceps/{id}',
-        handler: cepsController.destroy,
-        config: {
-          cors: {
-            origin: ['*'],
-            additionalHeaders: ['cache-control', 'x-requested-with']
-          }
-        }
+        handler: cepsController.destroy
       },
       { 
         method: 'PUT',
         path: '/api/ceps/{id}',
-        handler: cepsController.update,
-        config: {
-          cors: {
-            origin: ['*'],
-            additionalHeaders: ['cache-control', 'x-requested-with']
-          }
-        }
+        handler: cepsController.update
       }
     ]
   );

@@ -4,7 +4,13 @@ const Hapi = require('hapi');
 
 const server = Hapi.server({
     port: process.env.NODE_PORT || 3000,
-    host: 'localhost'
+    host: 'localhost',    
+    routes: {
+        cors: {
+            origin: ['*'],
+            additionalHeaders: ['cache-control', 'x-requested-with']
+        }
+    }
 });
 
 require('./server/routes')(server);
