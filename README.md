@@ -1,6 +1,30 @@
-INICIAR SERVIDOR
-  node start
+# Transfeera!
+## Projeto teste para desenvolvedor na transfeera.
 
+Cadastros de Estados, Cidades e CEPs
 
-URL DA BASE DE DADOS
-export DATABASE_URL=our-database-url
+## Tecnologias
+* Node v7.10.0
+* Npm v6.1.0
+* Hapi v17.5.1
+* PG v7.4.3
+* Sequelize v4.37.10
+* Postgres v9.6.0
+
+## Utilização
+### Requisitos necessários:
+* [NodeJS](http://nodejs.org/) (with [NPM](https://www.npmjs.org/))
+* [Postgres](https://www.postgresql.org/download/)
+
+### Instalação
+1. Clone o repositório: `git clone https://github.com/eduardobarbiero/transfeera_api.git`;
+2. Instale as dependências: `npm install`;
+3. A configuração dos dados de conexão com o banco de dados e porta do servidor devem ser feitos através de variaveis de ambiente: 
+* PORT;
+* DB_USERNAME;
+* DB_PASSWORD;
+* DB_NAME;
+* DB_HOSTNAME;
+* DB_PORT.
+5. Execute `npm start` para iniciar o servidor;
+6. Utilize a URL `http://localhost:8080/#/ ou com o numero da porta que foi definida`.
