@@ -1,6 +1,6 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
-  var Cep = sequelize.define('Cep', {
+  let Cep = sequelize.define('Cep', {
     address: { type: DataTypes.STRING },
     number: { type: DataTypes.STRING },
     district: { type: DataTypes.STRING },
