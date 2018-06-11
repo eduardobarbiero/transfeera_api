@@ -19,7 +19,9 @@ Cadastros de Estados, Cidades e CEPs
 ### Instalação
 1. Clone o repositório: `git clone https://github.com/eduardobarbiero/transfeera_api.git`;
 2. Instale as dependências: `npm install`;
-3. A configuração dos dados de conexão com o banco de dados e porta do servidor devem ser feitos através de variaveis de ambiente para ser usado em produção: 
+3. Para criação da base de dados(caso for local) utilizar `sequelize db:create`;
+4. Migração da base de dados utilizar `sequelize db:migrate`;
+5. A configuração dos dados de conexão com o banco de dados e porta do servidor devem ser feitos através de variaveis de ambiente para ser usado em produção: 
 * NODE_ENV - default development;
 * PORT - default 3000;
 * DB_USERNAME;
@@ -27,5 +29,5 @@ Cadastros de Estados, Cidades e CEPs
 * DB_NAME;
 * DB_HOSTNAME;
 * DB_PORT.
-5. Execute `npm start` para iniciar o servidor;
-6. Utilize a URL `http://localhost:8080/#/ ou com o numero da porta que foi definida`.
+7. Execute `npm start` para iniciar o servidor;
+8. Utilize a URL `http://localhost:8080/#/ ou com o numero da porta que foi definida`.
