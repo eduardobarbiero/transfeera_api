@@ -31,3 +31,9 @@ Cadastros de Estados, Cidades e CEPs
 * DB_PORT.
 7. Execute `npm start` para iniciar o servidor;
 8. Utilize a URL `http://localhost:8080/#/ ou com o numero da porta que foi definida`.
+
+
+### Testes
+1. Execute o comando `NODE_ENV=test sequelize db:create` para criar a base de dados de teste;
+2. Execute o comando `NODE_ENV=test sequelize db:migrate` para migrar a base de teste;
+3. Execute `npm test` para iniciar os testes.

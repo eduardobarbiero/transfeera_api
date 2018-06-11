@@ -13,6 +13,7 @@ module.exports = {
       database: 'transfeera_test',
       host: '127.0.0.1',
       dialect: 'postgres',
+      logging: false,
       port: 5432
     },
     production: {
