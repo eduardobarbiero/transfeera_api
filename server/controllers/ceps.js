@@ -20,6 +20,12 @@ module.exports = {
       .then(ceps => ceps)
       .catch(error => error);
   },
+  findById(req, res) {
+    return Cep
+      .findById(req.params.id, { include: [{ model: City, as: 'city'}] })
+      .then(cep => cep)
+      .catch(error => error);
+  },
   destroy(req, res) {
     return Cep
       .destroy(

@@ -42,6 +42,14 @@ module.exports = (server, assert) => {
       });
     });
 
+    it("Get CEP", function(done){    
+      server
+      .get("/api/ceps/" + cep.id)
+      .set('Accept', 'application/json')
+      .expect('Content-Type', /json/)
+      .expect(200, done);
+    });  
+
     it("Update CEPs", function(done){        
       server
       .put("/api/ceps/" + cep.id)

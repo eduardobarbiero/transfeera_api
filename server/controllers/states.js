@@ -15,6 +15,12 @@ module.exports = {
       .then(states => states)
       .catch(error => error);
   },
+  findById(req, res) {
+    return State
+      .findById(req.params.id)
+      .then(state => state)
+      .catch(error => error);
+  },
   destroy(req, res) {
     return State
       .destroy(

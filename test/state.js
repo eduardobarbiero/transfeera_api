@@ -16,6 +16,14 @@ module.exports = (server, assert) => {
       });
     });
 
+    it("Get State", function(done){    
+      server
+      .get("/api/states/" + state.id)
+      .set('Accept', 'application/json')
+      .expect('Content-Type', /json/)
+      .expect(200, done);
+    });  
+
     it("Update State", function(done){        
       server
       .put("/api/states/" + state.id)

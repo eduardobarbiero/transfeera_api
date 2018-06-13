@@ -18,6 +18,12 @@ module.exports = {
       .then(cities => cities)
       .catch(error => error);
   },
+  findById(req, res) {
+    return City
+      .findById(req.params.id, { include: [{ model: State, as: 'state'}] })
+      .then(city => city)
+      .catch(error => error);
+  },
   destroy(req, res) {
     return City
       .destroy(

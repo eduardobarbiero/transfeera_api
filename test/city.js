@@ -32,6 +32,14 @@ module.exports = (server, assert) => {
       });
     });
 
+    it("Get City", function(done){    
+      server
+      .get("/api/cities/" + city.id)
+      .set('Accept', 'application/json')
+      .expect('Content-Type', /json/)
+      .expect(200, done);
+    });  
+
     it("Update City", function(done){        
       server
       .put("/api/cities/" + city.id)

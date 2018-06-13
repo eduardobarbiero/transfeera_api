@@ -33,6 +33,11 @@ module.exports = (server) => {
         handler: statesController.index
       },
       { 
+        method: 'GET',
+        path: '/api/states/{id}',
+        handler: statesController.findById
+      },
+      { 
         method: 'POST',
         path: '/api/states',
         handler: statesController.create
@@ -59,6 +64,11 @@ module.exports = (server) => {
         handler: citiesController.index
       },
       { 
+        method: 'GET',
+        path: '/api/cities/{id}',
+        handler: citiesController.findById
+      },
+      { 
         method: 'POST',
         path: '/api/cities',
         handler: citiesController.create
@@ -83,6 +93,11 @@ module.exports = (server) => {
         method: 'GET',
         path: '/api/ceps',
         handler: cepsController.index
+      },
+      { 
+        method: 'GET',
+        path: '/api/ceps/{id}',
+        handler: cepsController.findById
       },
       { 
         method: 'POST',
